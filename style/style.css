@@ -1,0 +1,129 @@
+@import url('./reset.css');
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    width: 100%;
+    max-width: 1170px; 
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 30px;
+    row-gap: 40px; 
+    margin: 40px auto 70px;
+}
+
+.card {
+    width: 270px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #DEDEDE;
+
+    background: #FFF;
+}
+
+.card__add{
+    position: absolute;
+    top: 330px ;
+    opacity: 0;
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #296DC1;
+    color:#fff;
+    margin-top: 0px;
+    
+}
+
+.card:hover .card__bottom{
+    margin-top: -30px;
+}
+
+.card:hover button {
+    opacity: 1;
+    transition: opacity .3s;
+    
+}
+
+.card__top {
+    margin: 10px auto 0;
+    height: 200px;
+	position: relative;
+}
+
+
+
+
+.card__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+}
+
+.card__prices {
+    display: flex;
+    margin-top: 112px;
+
+    position: absolute;
+}
+
+.card__price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+}
+
+
+.card__price {
+    color: #000;
+
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 23.4px */
+}
+
+
+
+
+.card__title {
+    display: flex;
+    margin-top: 34px;
+    width: 230px;
+    color: #000;
+
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+}
+
+
+
+
+
+.card__add.active {
+    border: none;
+    background-color: #00A82D;
+    color: #fff;
+}
+
+
+
+    

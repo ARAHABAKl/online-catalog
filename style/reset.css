@@ -1,0 +1,137 @@
+html, header, body{
+    height: 100%;
+    width: 100%;
+
+    
+}
+
+
+
+header {
+    margin-top: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    height: 37px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.none {
+    display: none;
+}
+
+.error{
+    margin: 20px auto;
+    width: 400px;
+    background-color: #606060;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.error p {
+    text-align: center;
+}
+
+.error p a {
+    color: white;
+}
+
+.wrapper{
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+h1 {
+    padding: 0px;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 39px */   
+}
+
+.basket{
+    text-decoration: none;
+    width: 142px;
+    height: 24px;
+}
+
+.basket__inner{
+    display: flex;
+    justify-content:space-between;
+}
+
+.basket__inner p {
+    color: #35383A;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.svg{
+    fill: #35383A;
+}
+
+.basket__inner:hover p{
+    color: #00A82D;
+}
+
+.basket__inner:hover .svg{
+    fill: #00A82D;
+}
+
+.basket__count{
+
+    border-radius: 50%;
+    background-color: #00A82D;
+    width: 21px;
+    height: 21px;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFF;
+
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.home{
+    width: 215px;
+    height: 37px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 1170px;
+    height: 36px;
+}
+
+.footer{
+    color: #7C828B;
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 15.6px */
+}
